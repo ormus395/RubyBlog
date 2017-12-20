@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/about' => 'pages#about'
   
+  #gives me get, put, post, delete
+  resources :articles
+  
 end
